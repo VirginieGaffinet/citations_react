@@ -1,0 +1,39 @@
+/* mobile first */
+.randomButton {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: calc(var(--gap) /3);
+  border-radius: var(--borderRadius);
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  box-shadow: var(--shadow);
+  color: var(--fontColor);
+  background-color: #B3E8E5;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.613);
+  font-family: var(--font);
+  font-size: 1.3rem;
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+  .randomButton {
+    width: 50%;
+    padding: calc(var(--gap) /2);
+  }
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+/* for screen */
+@media (min-width: 1200px) {
+  .randomButton {
+    width: 30%;
+    padding: calc(var(--gap) /2);
+  }
+}

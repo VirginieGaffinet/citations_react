@@ -12,6 +12,7 @@
   font-family: var(--font);
   background: url(../../assets/image/citation.jpg) no-repeat center center fixed;
   background-size: cover;
+  color: var(--fontColor);
 }
 
 .lotr-img {
