@@ -1,0 +1,60 @@
+/* mobile first */
+.citations-container {
+  height: 100%;
+}
+
+.citation-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.citation, .author {
+  font-size: calc(var(--fontSize) /1.8);
+}
+
+.citation {
+  margin: calc(var(--gap) /2.5);
+  text-align: center;
+}
+
+.author {
+  font-style: italic;
+  margin-top: calc(var(--gap) /2);
+}
+
+.lign {
+  width: 15%;
+  height: 0.2rem;
+  background-color: #0000007e;
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+  .citation, .author {
+    font-size: calc(var(--fontSize) /1.4);
+  } 
+  .citation-container {
+    height: 300px;
+
+  }
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+  .citation, .author {
+    font-size: calc(var(--fontSize) /1.2);
+  } 
+}
+
+/* for screen */
+@media (min-width: 1200px) {
+  .citation, .author {
+    font-size: calc(var(--fontSize));
+  }
+  .citation-container {
+    justify-content: center;
+  }
+}

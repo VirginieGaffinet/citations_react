@@ -1,0 +1,27 @@
+/* mobile first */
+.citations {
+  position: relative;
+  background-color: #3BACB6;
+  height: 410px;
+  width: 80%;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow);
+  opacity: var(--opacity);
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+  .citations {
+    height: 450px;
+   }
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+/* for screen */
+@media (min-width: 1200px) {
+
+}

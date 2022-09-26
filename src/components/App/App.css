@@ -1,0 +1,51 @@
+/* mobile first */
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font);
+  background: url(../../assets/image/citation.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: var(--fontColor);
+}
+
+.lotr-img {
+  background: url(../../assets/image/lotr.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+.simpson-img {
+  background: url(../../assets/image/simpson.png) no-repeat center center fixed;
+  background-size:cover;
+}
+
+.star-wars-img {
+  background: url(../../assets/image/starwars.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.lotr-img, .simpson-img, .star-wars-img {
+  transition: 1.5s ease-in-out ;
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+/* for screen */
+@media (min-width: 1200px) {
+
+}

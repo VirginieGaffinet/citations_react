@@ -1,0 +1,38 @@
+
+/* mobile first */
+.app-header {
+  width: 80%;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #2F8F9D;
+  padding: calc(var(--gap) /2);
+  margin-top: calc(var(--gap));
+  border-radius: var(--borderRadius);
+  margin-bottom: var(--gap);
+  box-shadow: var(--shadow);
+  opacity: var(--opacity);
+}
+
+/* for tablet */
+@media (min-width: 576px) {
+  .app-header {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+/* for small screen */
+@media (min-width: 768px) {
+
+}
+
+/* for screen */
+@media (min-width: 1200px) {
+
+}
