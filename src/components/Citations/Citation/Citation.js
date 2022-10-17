@@ -1,6 +1,16 @@
 import './citation.css';
+// import propTypes
+import PropTypes from 'prop-types';
 
-function Citation({simpsonCitation, lordOfTheRingsCitation, starWarsCitation, randomNumber, buttonSimpson, buttonLordOfTheRings, buttonStarWars}) {
+function Citation({
+  simpsonCitation,
+  lordOfTheRingsCitation,
+  starWarsCitation,
+  randomNumber,
+  buttonSimpson,
+  buttonLordOfTheRings,
+  buttonStarWars
+}) {
   return (
     <div className='citations-container'>
       {buttonSimpson ? <div className='citation-container'><p className='citation'>{simpsonCitation[randomNumber][0]}</p>
@@ -16,6 +26,16 @@ function Citation({simpsonCitation, lordOfTheRingsCitation, starWarsCitation, ra
       <p className='author'>{starWarsCitation[randomNumber][1]}</p></div> : '' } 
     </div>
   );
+};
+
+Citation.propTypes = {
+  simpsonCitation : PropTypes.array,
+  lordOfTheRingsCitation : PropTypes.array,
+  starWarsCitation : PropTypes.array,
+  randomNumber : PropTypes.number,
+  buttonSimpson : PropTypes.bool,
+  buttonLordOfTheRings : PropTypes.bool,
+  buttonStarWars : PropTypes.bool,
 };
 
 export default Citation;

@@ -24,7 +24,7 @@ function App() {
   function checkButtonClick() {
     if (buttonSimpson || buttonLordOfTheRings || buttonStarWars) {
       setButtonClick(true);
-      console.log(buttonClick);
+      // console.log(buttonClick);
     } else {
       setButtonClick(false);
     }

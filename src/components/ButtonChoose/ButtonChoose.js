@@ -1,4 +1,7 @@
+// import css
 import './buttonChoose.css';
+// import propTypes
+import PropTypes from 'prop-types';
 
 function ButtonChoose({setButtonSimpson, setButtonLordOfTheRings, setButtonStarWars}) {
   return (
@@ -26,6 +29,12 @@ function ButtonChoose({setButtonSimpson, setButtonLordOfTheRings, setButtonStarW
     </button>
   </div>
   );
+};
+
+ButtonChoose.propTypes = {
+  setButtonSimpson : PropTypes.func,
+  setButtonLordOfTheRings : PropTypes.func,
+  setButtonStarWars : PropTypes.func
 };
 
 export default ButtonChoose;
